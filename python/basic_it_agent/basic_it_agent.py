@@ -168,7 +168,7 @@ tools_schema = [
 SYSTEM_PROMPT = ("You are a Level 1 IT Responder. Investigate server issues. "
                  "If CPU or Memory is > 90%, restart the service. If logs show critical dependency errors (like connection refused) that a restart won't fix, escalate to an engineer.")
 
-MODEL = "openai/gpt-6-luna"   # cheap OpenRouter model; other options: "openai/gpt-5.4-nano", "anthropic/claude-haiku-5.5"
+MODEL = "openai/gpt-6-luna"   # other options: "openai/gpt-5.4-nano", "anthropic/claude-haiku-5.5"
 
 def run_it_agent(user_issue: str, max_steps: int = 10):
     """Runs the agent loop. Returns the final answer and the trace of tool calls (used by evals)."""

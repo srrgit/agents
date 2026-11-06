@@ -23,7 +23,7 @@ import io
 import json
 import time
 
-import basic_it_agent as agent
+import gh_srrgit.agents.python.basic_it_agent.basic_it_agent as agent
 
 # ---------------------------------------------------------------------------
 # Scenarios
